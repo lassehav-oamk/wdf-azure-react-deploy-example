@@ -3,7 +3,8 @@
 A sample React application built with Vite and TypeScript, designed to demonstrate deployment to Azure Static Web Apps service. This app showcases a product catalog with search, filtering, and sorting capabilities.
 
 ## 🚀 Live Demo
-*URL will be available after Azure deployment*
+https://green-river-0b6b73e03.1.azurestaticapps.net/
+
 
 ## ✨ Features
 
@@ -48,40 +49,8 @@ wdf-azure-react-deploy-example/
 └── README.md
 ```
 
-## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 16 or higher
-- npm or yarn
 
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd wdf-azure-react-deploy-example
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open browser**
-   Navigate to `http://localhost:5173`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The build artifacts will be stored in the `dist/` directory.
 
 ## ☁️ Azure Static Web Apps Deployment
 
@@ -111,7 +80,12 @@ This project follows the recommended structure for Azure Static Web Apps:
 ### Key Configuration
 
 ```json
+package.json
+
 {
+  "engines": {
+    "node": "22.13.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -134,13 +108,6 @@ This project follows the recommended structure for Azure Static Web Apps:
 
 The app fetches product data from [DummyJSON](https://dummyjson.com/products), a free REST API for testing and prototyping.
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test locally
-5. Submit a pull request
 
 ## 📄 License
 
